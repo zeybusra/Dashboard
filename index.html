@@ -6,738 +6,411 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Title</title>
     <link rel="stylesheet" href="./css/main.css">
-
 </head>
 <body>
 
+<div class="grid-container">
 
-<!--NAVBAR-->
+    <!--    HEADER-->
+    <div class="header">
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-        <div id="dash-navbar" class="collapse navbar-collapse">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container text-white">
+                <div id="dash-navbar" class="collapse navbar-collapse">
+                </div>
 
+                <button class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#dash-navbar"
+                        aria-controls="dash-navbar"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-        </div>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
 
-        <button class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#dash-navbar"
-                aria-controls="dash-navbar"
-                aria-expanded="false"
-                aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Link</a>
+                    </li>
+                </ul>
 
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Link</a>
-            </li>
-        </ul>
-
-        <form class="d-flex ">
-            <input class="form-control me-2" placeholder="search" aria-label="Search" type="search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-
-    </div>
-</nav>
-
-<!--NAVBAR END-->
-
-
-<!--MENU-->
-
-<a class="btn btn-light position-absolute top-0 start-0"
-   data-bs-toggle="offcanvas"
-   href="#dash-offcanvas"
-   role="button"
-   aria-controls="offcanvasExample">
-    Menu
-</a>
-
-<div class="offcanvas offcanvas-start" tabindex="-1" id="dash-offcanvas" aria-labelledby="dash-offcanvas-example">
-    <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="dash-offcanvas-example">Menu</h5>
-    </div>
-    <div>
-        <ul>
-            <li>Home</li>
-            <li>Buton</li>
-            <li>Widget</li>
-            <li>Tables</li>
-            <li>Tables</li>
-            <li>Tables</li>
-            <li>Tables</li>
-        </ul>
-    </div>
-</div>
-
-<!--MENU END-->
-
-<!--CHAT-->
-
-<button class="btn btn-light position-absolute top-0 end-0"
-        type="button"
-        data-bs-toggle="offcanvas"
-        data-bs-target="#offcanvasRight"
-        aria-controls="offcanvasRight"
->Chat
-</button>
-
-<div class="offcanvas offcanvas-end"
-     tabindex="-1"
-     id="offcanvasRight"
-     aria-labelledby="offcanvasRightlabel">
-
-    <div class="offcanvas-header">
-        <h5 id="offcanvasRightlabel">Chat</h5>
-        <button type="button" class="btn-close text-reset" data-bs-dismiss=" offcanvas" aria-label="close"></button>
-    </div>
-
-    <div class="offcanvas-body">
-
-    </div>
-</div>
-
-<!--CHAT END-->
-
-<!--CAROUSEL-->
-
-<div id="Dashcarousel"
-     class="carousel slide"
-     data-bs-ride="carousel">
-
-    <div class="carousel-indicators">
-
-        <button
-                type="button"
-                data-bs-target="Dashcarousel"
-                data-bs-slide-to="0"
-                class="active"
-                aria-current="true"
-                aria-label="slide 1"></button>
-
-        <button
-                type="button"
-                data-bs-target="Dashcarousel"
-                data-bs-slide-to="1"
-                aria-label="slide 2"></button>
-        <button
-                type="button"
-                data-bs-target="Dashcarousel"
-                data-bs-slide-to="2"
-                aria-label="slide 3"></button>
-    </div>
-
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="./media/Slide-1.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-            <img src="./media/Slide-2.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-            <img src="./media/Slide-3.jpg" class="d-block w-100" alt="...">
-        </div>
-    </div>
-
-    <button class="carousel-control-prev" type="button" data-bs-target="#Dashcarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#Dashcarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button>
-</div>
-
-<!--CAROUSEL END-->
-
-
-<!--HOME-->
-
-<div class="grid-container  ">
-
-
-    <div class="grid-item item1">
-        <div class="row">
-            <div class="col-6 text-start">
-                <h4>Total Orders</h4>
-                <h5 class="fw-normal">Last year expenses</h5>
+                <form class="d-flex ">
+                    <input class="form-control me-2" placeholder="search" aria-label="Search" type="search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
             </div>
 
-            <div class="col-6">
-                <h1 style="color: #0a58ca" class="fs-1">1896</h1>
-            </div>
+        </nav>
+        <!--CHAT-->
 
-            <div class="progress mt-5">
-                <div class="progress-bar " style="width: 70%" role="progressbar" aria-valuenow="70"
-                     aria-valuemin="0"
-                     aria-valuemax="100">
+        <!--        <button class="btn btn-light position-absolute top-0 end-0"-->
+        <!--                type="button"-->
+        <!--                data-bs-toggle="offcanvas"-->
+        <!--                data-bs-target="#offcanvasRight"-->
+        <!--                aria-controls="offcanvasRight"-->
+        <!--        >Chat-->
+        <!--        </button>-->
+
+        <!--        <div class="offcanvas offcanvas-end"-->
+        <!--             tabindex="-1"-->
+        <!--             id="offcanvasRight"-->
+        <!--             aria-labelledby="offcanvasRightlabel">-->
+
+        <!--            <div class="offcanvas-header">-->
+        <!--                <h5 id="offcanvasRightlabel">Chat</h5>-->
+        <!--                <button type="button" class="btn-close text-reset" data-bs-dismiss=" offcanvas"-->
+        <!--                        aria-label="close"></button>-->
+        <!--            </div>-->
+
+        <!--            <div class="offcanvas-body">-->
+
+        <!--            </div>-->
+        <!--        </div>-->
+
+        <!--CHAT END-->
+    </div>
+    <!--    HEADER END-->
+
+    <div class="menu">
+
+        <!--MENU-->
+
+        <div class="menu">
+
+            <div class="d-flex flex-column p-lg-5 text-white " style="width: 280px" ;>
+                <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                    <span class="fs-4">Menu</span>
+                </a>
+                <hr>
+
+                <ul class="nav nav-pills flex-column mb-auto">
+                    <li class="nav-item">
+                        <a href="" class="nav-link active" aria-current="page">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-white" aria-current="page">Widgets</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-white" aria-current="page">Forms</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-white" aria-current="page">Graphics</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-white" aria-current="page">Cards</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-white" aria-current="page">Graphics</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-white" aria-current="page">Cards</a>
+                    </li>
+                </ul>
+                <hr>
+
+
+                <div class="dropdown ">
+                    <a href="#"
+                       class="d-flex align-items-center text-white text-decoration-none dropdown-toggle show"
+                       id="DashMenuDropdown"
+                       data-bs-toggle="dropdown"
+                       aria-expanded="true">Profile
+
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-menu-dark text-small shadow show"
+                        aria-labelledby="DashMenuDropdown"
+                        style="position: absolute"
+                        data-popper-placement="top-start">
+
+                        <li>
+                            <a href="#" class="dropdown-item">New Projects</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="dropdown-item">Settings</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="dropdown-item">Profile</a>
+                        </li>
+
+                        <hr>
+
+                        <li>
+                            <a href="#" class="dropdown-item">Signout</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </div>
-
-
-    <div class="grid-item item2">
-        <div class="row">
-
-            <div class="col-6 text-start">
-                <h4>Products Sold</h4>
-                <h5 class="fw-normal">Revenue streams</h5>
-            </div>
-
-            <div class="col-6">
-                <h1 style="color: #06c5e8" class="fs-1">$ 3M</h1>
-            </div>
-
-            <div class="progress mt-5">
-                <div class="progress-bar bg-info" style="width: 35%" role="progressbar" aria-valuenow="35"
-                     aria-valuemin="0"
-                     aria-valuemax="100">
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="grid-item item3">
-        <div class="row">
-            <div class="col-6 text-start">
-
-                <h4>Followers</h4>
-                <h5 class="fw-normal">People Interested</h5>
-            </div>
-
-            <div class="col-6">
-                <h1 style="color: #057314" class="fs-1">45,9%</h1>
-            </div>
-            <div class="progress mt-5">
-                <div class="progress-bar bg-success" style="width: 40%" role="progressbar" aria-valuenow="40"
-                     aria-valuemin="0"
-                     aria-valuemax="100">
-
-                </div>
-            </div>
-        </div>
+        <!--MENU END-->
 
     </div>
 
+    <div class="home-dash text-white">
 
-    <div class="grid-item item4">
-
-        <p class="text text-start">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi deserunt facilis molestiae
-            necessitatibus
-            nemo voluptates? Accusamus adipisci animi aspernatur commodi consectetur, cum deserunt facilis fugit id
-            impedit ipsa ipsum iure laborum maxime minima minus nemo neque nesciunt praesentium recusandae
-            reprehenderit
-            suscipit, vero voluptatum? Illum libero odio pariatur sequi suscipit temporibus vel voluptatem! Ad
-            aperiam,
-            blanditiis delectus dolor eaque eos labore quas repellat saepe soluta. Aliquam asperiores autem commodi
-            cumque earum error fug itaque nemo, odio officia quaerat quisquam, suscipit velit! A accusantium
-            adipisci
-            alias amet asperiores aspernatur corporis delectus dolores dolorum ea eaque enim exercitationem fugit
-            iure
-            laudantium nihil numquam obcaecati officia, omnis perferendis quidem quis quod ratione repudiandae,
-            sapiente
-            temporibus voluptate! A aperiam debitis deserunt, enim fuga fugit id illum maiores modi nemo nostrum,
-            odio
-            pariatur repellendus tempore vero. Aliuam debitis explicabo laudantium modi, molestias natus
-            perferendis,
-            porro qui quia quis sapiente sed temporibus tenetur ullam veniam? Asperiores hic laborum libero numquam
-            sunt. Accusamus aliquid animi blanditiis consectetur culpa, dolorum eligendi est expedita facere
-            incidunt
-            libero natus necessitatibus, ratione repellendus repudiandae saepe ut vitae! Amet assumenda aut deserunt
-            distinctio dolorum excepturi explicabo, hic itaque libero nostrum quaerat ratione sunt totam velit
-            veniam!
-            Accusantium, architecto dolore eius enim illum ipsa mollitia sit tenetur voluptate. Asperiores
-            consequuntur
-            cupiditate earum eius, excepturi explicabo facilis fuga fugit hic illo inventore ipsam molestiae non
-            obcaecati officia perferendis possimus quia quibusdam quidem repudiandae sunt suscipit, ut. Accusamus ad
-            aspernatur autem debitis doloremque id in, itaque laboriosam laudantium libero magnam maiores maxime
-            molestias natus nobis, nostrum perspiciatis repellat similique tempora tempore vel, velit vero! Ad
-            aliquam
-            asperiores assumenda aut consectetur consequatur consequuntur corporis dicta dolore doloremque dolores
-            enim
-            eos expedita explicabo, facilis fuga harum ipsum iste iure labore, maiores modi, nesciunt non odit
-            officiis
-            quas quidem soluta tempore temporibus totam ullam vero vitae voluptas? Accusamus eligendi iste maiores
-            placeat quia quo, voluptatum? Ab amet aut commodi, consectetur culpa cum dolorem dolorum expedita ipsum
-            magni nam necessitatibus nesciunt nihil omnis rem reprehenderit sequi unde? Corporis dolorum eos id
-            natus
-            nihil perferendis porro velit? Aliquam aut dolor ea earum, eum facilis illum minima possimus quaerat
-            ratione
-            soluta tempore ut! A accusantium ad adipisci animi aspernatur blanditiis debitis delectus ducimus, ea
-            eos et
-            ex illum ipsam minima minus necessitatibus neque nesciunt numquam praesentium quas quia reiciendis,
-            sequi
-            sunt velit vitae? Accusamus assumenda consectetur dolorum, eaque, est fugit nam nulla perspiciatis
-            provident
-            sit tenetur vitae voluptatem, voluptatum. Aliquam consectetur deserunt doloremque, enim est expedita id
-            ipsam, iure magnam nam perferendis perspiciatis similique soluta temporibus voluptas? Ab accusantium
-            alias
-            aspernatur atque autem commodi consequuntur corporis dignissimos distinctio dolorem doloribus ducimus,
-            ea
-            eius enim ipsum laboriosam libero magnam molestiae nemo non nostrum numquam officiis omnis optio
-            pariatur
-            praesentium quae quam quasi quis quisquam, repellat repudiandae sit sunt suscipit unde vel veniam?
-            Architecto cumque deserunt dolorum eaque eius exercitationem expedita, facilis, illum iusto maiores
-            nihil
-            reiciendis rem sed unde, voluptates. Asperiores, consequatur consequuntur deserunt dolorem eaque
-            nesciunt
-            pariatur porro quam quisquam quo sed similique sunt voluptatibus? Aliquam amet dolorum hic, quibusdam
-            sit ullam.
-        </p>
-    </div>
-
-
-    <div class="grid-item item5 ">
-        <div style="width: 18rem;" class="card d-block">
-            <img src="./media/social-networks.png" class="p-3 card-img-top " alt="">
-            <div class="card-body text-start">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dolorum fuga incidunt ipsam
-                    officiis praesentium rerum. A, architecto beatae deserunt ducimus, eos exercitationem id modi optio
-                    perspiciatis, quam quia saepe.</p>
-
-                <button class="btn btn-primary">Join Us</button>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="grid-item item6">
-
-        <h3>Lorem ipsum</h3>
-        <p class="fw-normal pt-3">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum fugit nemo quaerat reiciendis sed totam ut?
-            Animi asperiores consectetur deleniti impedit itaque, maxime minus molestias natus nemo nulla quibusdam
-            quidem reiciendis repellendus sequi, temporibus, veniam voluptas? Accusamus aperiam aut consectetur corporis
-            fuga nisi quisquam, sapiente voluptatem! Commodi consequatur dignissimos eaque fuga labore numquam officia
-            provident, sunt tempora tempore? Ad aliquid beatae, dolore doloribus ducimus eius eligendi fuga iste maiores
-            officia pariatur perferendis quae quas quibusdam quidem quis quo rerum sequi temporibus unde veniam
-            veritatis vitae voluptatem? Ad cumque doloremque error natus nostrum praesentium recusandae repellendus!
-            Aperiam architecto at beatae culpa debitis eaque enim eos facere harum id iure maxime nobis odio, porro
-            praesentium quia quod rem similique suscipit, tempore, vitae?
-        </p>
-
-        <br>
-        <button class="btn btn-primary">Join Us</button>
-
-
-    </div>
-
-    <!--    ACCORDION-->
-
-    <div class="grid-item item7">
-
-        <div class="accordion accordion-flush" id="dashAccordion">
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingOne">
-                    <button class="accordion-button collapsed"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseOne"
-                            aria-expanded="false"
-                            aria-controls="flush-collapseOne">
-                        Accordion 1
-                    </button>
-                </h2>
-                <div id="flush-collapseOne" class="accordion-collapse collapse"
-                     aria-labelledby="flush-headingOne"
-                     data-bs-parent="#dashAccordion">
-                    <div class="accordion-body">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, culpa debitis nulla
-                        quisquam ratione voluptates! Doloremque id inventore nihil officia, repellendus
-                        repudiandae sit unde veniam voluptatum! Ad, aliquam at doloribus eligendi exercitationem
-                        facere laboriosam modi officiis omnis quasi qui recusandae repellendus sequi similique
-                        velit vero vitae. Ab alias animi at atque commodi consectetur consequatur deserunt dicta
-                        doloremque dolores earum eum, excepturi fuga hic in inventore ipsa ipsum laboriosam
-                        laborum libero magnam, nam nesciunt omnis perferendis possimus quae quia sapiente sed
-                        tempore temporibus ullam velit voluptatibus voluptatum. Animi dolore eligendi expedita
-                        iure laborum magnam, minima minus non, quos, reiciendis sint sit?
-                    </div>
+        <div class="home item1 rounded-3">
+            <div class="row">
+                <div class="col-6 text-start">
+                    <h5>Total Orders</h5>
+                    <p class="fw-light">Last year expenses</p>
                 </div>
-            </div>
 
-
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingTwo">
-                    <button class="accordion-button collapsed"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseTwo"
-                            aria-expanded="false"
-                            aria-controls="flush-collapseTwo">
-                        Accordion 2
-                    </button>
-                </h2>
-                <div id="flush-collapseTwo" class="accordion-collapse collapse"
-                     aria-labelledby="flush-headingTwo"
-                     data-bs-parent="#dashAccordion">
-                    <div class="accordion-body">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, culpa debitis nulla
-                        quisquam ratione voluptates! Doloremque id inventore nihil officia, repellendus
-                        repudiandae sit unde veniam voluptatum! Ad, aliquam at doloribus eligendi exercitationem
-                        facere laboriosam modi officiis omnis quasi qui recusandae repellendus sequi similique
-                        velit vero vitae. Ab alias animi at atque commodi consectetur consequatur deserunt dicta
-                        doloremque dolores earum eum, excepturi fuga hic in inventore ipsa ipsum laboriosam
-                        laborum libero magnam, nam nesciunt omnis perferendis possimus quae quia sapiente sed
-                        tempore temporibus ullam velit voluptatibus voluptatum. Animi dolore eligendi expedita
-                        iure laborum magnam, minima minus non, quos, reiciendis sint sit?
-                    </div>
+                <div class="col-6">
+                    <h1 style="color: #0a58ca" class="fs-1">1896</h1>
                 </div>
-            </div>
 
-
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingThree">
-                    <button class="accordion-button collapsed"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseThree"
-                            aria-expanded="false"
-                            aria-controls="flush-collapseThree">
-                        Accordion 3
-                    </button>
-                </h2>
-
-                <div id="flush-collapseThree" class="accordion-collapse collapse"
-                     aria-labelledby="flush-headingThree"
-                     data-bs-parent="#dashAccordion">
-                    <div class="accordion-body">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, culpa debitis nulla
-                        quisquam ratione voluptates! Doloremque id inventore nihil officia, repellendus
-                        repudiandae sit unde veniam voluptatum! Ad, aliquam at doloribus eligendi exercitationem
-                        facere laboriosam modi officiis omnis quasi qui recusandae repellendus sequi similique
-                        velit vero vitae. Ab alias animi at atque commodi consectetur consequatur deserunt dicta
-                        doloremque dolores earum eum, excepturi fuga hic in inventore ipsa ipsum laboriosam
-                        laborum libero magnam, nam nesciunt omnis perferendis possimus quae quia sapiente sed
-                        tempore temporibus ullam velit voluptatibus voluptatum. Animi dolore eligendi expedita
-                        iure laborum magnam, minima minus non, quos, reiciendis sint sit?
-                    </div>
-                </div>
-            </div>
-
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingFourth">
-                    <button class="accordion-button collapsed"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseFourth"
-                            aria-expanded="false"
-                            aria-controls="flush-collapseFourth">
-                        Accordion 4
-                    </button>
-                </h2>
-
-                <div id="flush-collapseFourth" class="accordion-collapse collapse"
-                     aria-labelledby="flush-headingFourth"
-                     data-bs-parent="#dashAccordion">
-                    <div class="accordion-body">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, culpa debitis nulla
-                        quisquam ratione voluptates! Doloremque id inventore nihil officia, repellendus
-                        repudiandae sit unde veniam voluptatum! Ad, aliquam at doloribus eligendi exercitationem
-                        facere laboriosam modi officiis omnis quasi qui recusandae repellendus sequi similique
-                        velit vero vitae. Ab alias animi at atque commodi consectetur consequatur deserunt dicta
-                        doloremque dolores earum eum, excepturi fuga hic in inventore ipsa ipsum laboriosam
-                        laborum libero magnam, nam nesciunt omnis perferendis possimus quae quia sapiente sed
-                        tempore temporibus ullam velit voluptatibus voluptatum. Animi dolore eligendi expedita
-                        iure laborum magnam, minima minus non, quos, reiciendis sint sit?
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingFifth">
-                    <button class="accordion-button collapsed"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseFifth"
-                            aria-expanded="false"
-                            aria-controls="flush-collapseFifth">
-                        Accordion 5
-                    </button>
-                </h2>
-
-                <div id="flush-collapseFifth" class="accordion-collapse collapse"
-                     aria-labelledby="flush-headingFifth"
-                     data-bs-parent="#dashAccordion">
-                    <div class="accordion-body">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, culpa debitis nulla
-                        quisquam ratione voluptates! Doloremque id inventore nihil officia, repellendus
-                        repudiandae sit unde veniam voluptatum! Ad, aliquam at doloribus eligendi exercitationem
-                        facere laboriosam modi officiis omnis quasi qui recusandae repellendus sequi similique
-                        velit vero vitae. Ab alias animi at atque commodi consectetur consequatur deserunt dicta
-                        doloremque dolores earum eum, excepturi fuga hic in inventore ipsa ipsum laboriosam
-                        laborum libero magnam, nam nesciunt omnis perferendis possimus quae quia sapiente sed
-                        tempore temporibus ullam velit voluptatibus voluptatum. Animi dolore eligendi expedita
-                        iure laborum magnam, minima minus non, quos, reiciendis sint sit?
-                    </div>
-                </div>
-            </div>
-
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingSixth">
-                    <button class="accordion-button collapsed"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseSixth"
-                            aria-expanded="false"
-                            aria-controls="flush-collapseSixth">
-                        Accordion 6
-                    </button>
-                </h2>
-
-                <div id="flush-collapseSixth" class="accordion-collapse collapse"
-                     aria-labelledby="flush-headingSixth"
-                     data-bs-parent="#dashAccordion">
-                    <div class="accordion-body">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, culpa debitis nulla
-                        quisquam ratione voluptates! Doloremque id inventore nihil officia, repellendus
-                        repudiandae sit unde veniam voluptatum! Ad, aliquam at doloribus eligendi exercitationem
-                        facere laboriosam modi officiis omnis quasi qui recusandae repellendus sequi similique
-                        velit vero vitae. Ab alias animi at atque commodi consectetur consequatur deserunt dicta
-                        doloremque dolores earum eum, excepturi fuga hic in inventore ipsa ipsum laboriosam
-                        laborum libero magnam, nam nesciunt omnis perferendis possimus quae quia sapiente sed
-                        tempore temporibus ullam velit voluptatibus voluptatum. Animi dolore eligendi expedita
-                        iure laborum magnam, minima minus non, quos, reiciendis sint sit?
-                    </div>
-                </div>
-            </div>
-
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingSeventh">
-                    <button class="accordion-button collapsed"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseSeventh"
-                            aria-expanded="false"
-                            aria-controls="flush-collapseSeventh">
-                        Accordion 7
-                    </button>
-                </h2>
-
-                <div id="flush-collapseSeventh" class="accordion-collapse collapse"
-                     aria-labelledby="flush-headingSeventh"
-                     data-bs-parent="#dashAccordion">
-                    <div class="accordion-body">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, culpa debitis nulla
-                        quisquam ratione voluptates! Doloremque id inventore nihil officia, repellendus
-                        repudiandae sit unde veniam voluptatum! Ad, aliquam at doloribus eligendi exercitationem
-                        facere laboriosam modi officiis omnis quasi qui recusandae repellendus sequi similique
-                        velit vero vitae. Ab alias animi at atque commodi consectetur consequatur deserunt dicta
-                        doloremque dolores earum eum, excepturi fuga hic in inventore ipsa ipsum laboriosam
-                        laborum libero magnam, nam nesciunt omnis perferendis possimus quae quia sapiente sed
-                        tempore temporibus ullam velit voluptatibus voluptatum. Animi dolore eligendi expedita
-                        iure laborum magnam, minima minus non, quos, reiciendis sint sit?
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-
-    <div class="grid-item item8">
-
-        <table class="table table-sm table-striped table-dark">
-            <thead>
-            <tr>
-                <th scope="col">.</th>
-                <th scope="">First Name</th>
-                <th scope="col">Last Name</th>
-                <th scope="col">Profile Progress</th>
-                <th scope="col">Status</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Jacob</td>
-                <td>
-                    <div class="progress">
-                        <div class="progress-bar " style="width: 30%" role="progressbar" aria-valuenow="30"
+                <div class="pl-3 pr-3">
+                    <div class="progress mt-5">
+                        <div class="progress-bar " style="width: 70%" role="progressbar" aria-valuenow="70"
                              aria-valuemin="0"
                              aria-valuemax="100">
                         </div>
                     </div>
-                </td>
-                <td>It's complicated</td>
-            </tr>
+                </div>
 
-            <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Otto</td>
-                <td>
-                    <div class="progress">
-                        <div class="progress-bar " style="width: 50%" role="progressbar" aria-valuenow="50"
-                             aria-valuemin="0"
-                             aria-valuemax="100">
-                        </div>
-                    </div>
-                </td>
+            </div>
+        </div>
 
-                <td>Single</td>
-            </tr>
-
-
-            <tr>
-                <th scope="row">3</th>
-                <td>Frank</td>
-                <td>Roy</td>
-                <td>
-                    <div class="progress">
-                        <div class="progress-bar " style="width: 85%" role="progressbar" aria-valuenow="85"
-                             aria-valuemin="0"
-                             aria-valuemax="100">
-                        </div>
-                    </div>
-                </td>
-
-                <td>Single</td>
-            </tr>
-
-
-            <tr>
-                <th scope="row">4</th>
-                <td>Marry</td>
-                <td>Wayas</td>
-                <td>
-                    <div class="progress">
-                        <div class="progress-bar " style="width: 15%" role="progressbar" aria-valuenow="15"
-                             aria-valuemin="0"
-                             aria-valuemax="100">
-                        </div>
-                    </div>
-                </td>
-
-                <td>In a relationship</td>
-            </tr>
-
-            <tr>
-                <th scope="row">5</th>
-                <td>Jack</td>
-                <td>Gehry</td>
-                <td>
-                    <div class="progress">
-                        <div class="progress-bar " style="width: 100%" role="progressbar" aria-valuenow="100"
-                             aria-valuemin="0"
-                             aria-valuemax="100">
-                        </div>
-                    </div>
-                </td>
-
-                <td>Single</td>
-            </tr>
-
-            </tbody>
-        </table>
-    </div>
-
-    <div class="grid-item item9">
-
-        <form class=" needs-validation" novalidate>
-
+        <div class="home item2 rounded-3">
             <div class="row">
 
-                <div class="col-6">
-                    <label for="input1" class="form-label"></label>
-                    <input type="email" class="form-control" id="input1" value="Mark" placeholder="First Name" required>
-                    <div class="valid-feedback">
-                        Looks good!
-                    </div>
+                <div class="col-6 text-start">
+                    <h5>Products Sold</h5>
+                    <p class="fw-light">Revenue streams</p>
+
                 </div>
 
                 <div class="col-6">
-                    <label for="input2" class="form-label"></label>
-                    <input type="email" class="form-control" id="input2" placeholder="Last Name" value="Otto" required>
-                    <div class="valid-feedback">
-                        Looks good!
-                    </div>
+                    <h1 style="color: #9d3838" class="fs-1">$ 3M</h1>
                 </div>
-
-            </div>
-
-
-            <div class="row">
-                <div class="col-6">
-                    <label for="input3" class="form-label"></label>
-                    <div class="input-group has-validation">
-                        <span class="input-group-text" id="inputGroupPrepend">@</span>
-                        <input type="text" class="form-control" id="input3"
-                               aria-describedby="inputGroupPrepend" placeholder="Username" required>
-                        <div class="invalid-feedback">
-                            Please choose a username.
+                <div class="pl-3 pr-3">
+                    <div class="progress mt-5">
+                        <div class="progress-bar bg-danger" style="width: 35%" role="progressbar" aria-valuenow="35"
+                             aria-valuemin="0"
+                             aria-valuemax="100">
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
 
+        <div class="home item3 rounded-3">
+            <div class="row">
+                <div class="col-6 text-start">
 
-                <div class="col-6">
-                    <label for="input1" class="form-label"></label>
-                    <input type="email" class="form-control" id="input1" placeholder="Password" value="Otto" required>
-                    <div class="valid-feedback">
-                        Looks good!
-                    </div>
+                    <h5>Followers</h5>
+                    <p class="fw-light">People Interested</p>
                 </div>
 
+                <div class="col-6">
+                    <h1 style="color: #057314" class="fs-1">45,9%</h1>
+                </div>
+                <div class="pl-3 pr-3">
+                    <div class="progress mt-5">
+                        <div class="progress-bar bg-success" style="width: 40%" role="progressbar" aria-valuenow="40"
+                             aria-valuemin="0"
+                             aria-valuemax="100">
 
-                <div class="row">
-                    <div class="col-12 text-start mt-4">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                            <label class="form-check-label" for="invalidCheck">
-                                Agree to terms and conditions
-                            </label>
-                            <div class="invalid-feedback">
-                                You must agree before submitting.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="home item4 rounded-3">
+            <div class="row">
+                <div class="col-6 text-start">
+
+                    <h5>Followers</h5>
+                    <p class="fw-normal">People Interested</p>
+                </div>
+
+                <div class="col-6">
+                    <h1 style="color: #06c5e8" class="fs-1">45,9%</h1>
+                </div>
+                <div class="pl-3 pr-3">
+                    <div class="progress mt-5">
+                        <div class="progress-bar bg-info" style="width: 40%" role="progressbar" aria-valuenow="40"
+                             aria-valuemin="0"
+                             aria-valuemax="100">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="home item5 rounded-3 ">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto dolore fugiat rerum voluptate
+                voluptatibus! Aperiam aspernatur dolorum eius, fugiat incidunt quae veritatis. Ab amet consequatur
+                consequuntur cumque dignissimos error eum ex impedit laborum, maiores minus nulla officiis perspiciatis
+                placeat quasi repudiandae saepe sapiente sed soluta vero. Beatae cum dicta eligendi excepturi
+                exercitationem obcaecati unde velit voluptates. A accusamus architecto consequatur corporis, cupiditate
+                dolor dolorem doloremque eaque eligendi et harum hic laboriosam nisi nulla odio praesentium quas quasi
+                qui quis quod quos ratione rerum ullam veritatis vero. Asperiores dolore dolorem incidunt ipsum itaque
+                libero natus nostrum, numquam perferendis quibusdam sed voluptas.
+            </p>
+        </div>
+
+        <div class="home item6 rounded-3">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et minus nemo nesciunt quos! Accusantium
+                blanditiis corporis earum error expedita facilis ipsa laborum minima necessitatibus nihil non, officiis
+                quae quibusdam, quisquam quo sed ut vitae voluptate. Ab accusamus adipisci amet aut commodi cupiditate
+                deleniti dolor ea error excepturi, explicabo facere fugiat fugit, impedit ipsam iusto maiores minus nam
+                natus nemo nisi nobis nulla numquam obcaecati officia perspiciatis porro quasi ratione repudiandae
+                similique temporibus velit, voluptatibus voluptatum! Adipisci, aliquam amet at doloribus dolorum est
+                explicabo incidunt labore laudantium, magni nesciunt odio, omnis porro quis quod quos recusandae sunt
+                tempore ullam ut? Atque.
+            </p>
+        </div>
+
+        <div class="home item7 rounded-3">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus atque beatae consequuntur culpa
+                debitis dolor eveniet itaque iusto modi molestiae nesciunt nostrum porro quae quasi, qui quia quibusdam
+                quos, reiciendis rem sapiente similique soluta tempora temporibus totam unde veniam voluptates. Ad
+                aspernatur atque dolore, excepturi explicabo hic impedit laborum minima, necessitatibus odio perferendis
+                quo similique vel. Animi asperiores ea, exercitationem fugiat id illum magni quam quas qui quidem
+                repellat rerum tempore voluptas. Commodi consectetur consequuntur debitis dicta distinctio ducimus
+                facilis fuga fugit hic id illum ipsa iste, laboriosam laudantium magnam molestias natus nobis obcaecati
+                pariatur perspiciatis quibusdam quisquam quos recusandae rem, sit suscipit tenetur totam veniam vitae
+                voluptates. Animi, aut culpa dolor labore laboriosam necessitatibus nesciunt officiis optio, placeat
+                quibusdam, quos recusandae. Commodi dicta ducimus inventore laborum minus molestiae quod tempora unde
+                ut! Adipisci aperiam eaque eligendi facilis molestiae saepe sed soluta. Ab dicta esse facilis,
+                laboriosam laborum omnis. A ad aliquam asperiores autem esse eum, expedita, harum inventore labore neque
+                nostrum odit recusandae reiciendis repellendus reprehenderit soluta ut, velit veniam veritatis
+                voluptatem. Aliquam autem blanditiis commodi corporis doloribus ducimus expedita explicabo illum in
+                laborum nihil nisi omnis quod tempora ut vel, voluptate. Commodi doloribus fugiat ipsa quod sint sunt?
+            </p>
+        </div>
+
+        <div class="home item8 rounded-3">
+            <table class="table table-sm table-striped table-dark">
+                <thead>
+                <tr>
+                    <th scope="col">.</th>
+                    <th scope="">First Name</th>
+                    <th scope="col">Last Name</th>
+                    <th scope="col">Profile Progress</th>
+                    <th scope="col">Status</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Jacob</td>
+                    <td>
+                        <div class="progress">
+                            <div class="progress-bar " style="width: 30%" role="progressbar" aria-valuenow="30"
+                                 aria-valuemin="0"
+                                 aria-valuemax="100">
                             </div>
                         </div>
-                    </div>
+                    </td>
+                    <td>It's complicated</td>
+                </tr>
 
-                    <div class="col-12">
-                        <button class="btn btn-primary" type="submit">Join Us</button>
-                    </div>
-                </div>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Otto</td>
+                    <td>
+                        <div class="progress">
+                            <div class="progress-bar " style="width: 50%" role="progressbar" aria-valuenow="50"
+                                 aria-valuemin="0"
+                                 aria-valuemax="100">
+                            </div>
+                        </div>
+                    </td>
 
-            </div>
-        </form>
+                    <td>Single</td>
+                </tr>
+
+
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Frank</td>
+                    <td>Roy</td>
+                    <td>
+                        <div class="progress">
+                            <div class="progress-bar " style="width: 85%" role="progressbar" aria-valuenow="85"
+                                 aria-valuemin="0"
+                                 aria-valuemax="100">
+                            </div>
+                        </div>
+                    </td>
+
+                    <td>Single</td>
+                </tr>
+
+
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Marry</td>
+                    <td>Wayas</td>
+                    <td>
+                        <div class="progress">
+                            <div class="progress-bar " style="width: 15%" role="progressbar" aria-valuenow="15"
+                                 aria-valuemin="0"
+                                 aria-valuemax="100">
+                            </div>
+                        </div>
+                    </td>
+
+                    <td>In a relationship</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">5</th>
+                    <td>Jack</td>
+                    <td>Gehry</td>
+                    <td>
+                        <div class="progress">
+                            <div class="progress-bar " style="width: 100%" role="progressbar" aria-valuenow="100"
+                                 aria-valuemin="0"
+                                 aria-valuemax="100">
+                            </div>
+                        </div>
+                    </td>
+
+                    <td>Single</td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+        <div class="home item9 rounded-3">
+            <p>
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium architecto aspernatur at corporis cum distinctio fuga illo impedit laborum mollitia neque provident quis quod, saepe vero? Dolores laboriosam nam sit? Et id labore voluptatum. Accusamus aliquam animi aperiam architecto asperiores assumenda atque, commodi consequuntur cumque deserunt ea earum, eius exercitationem facilis fuga id inventore ipsam iusto labore molestiae nesciunt nihil nostrum optio placeat quaerat qui quia quisquam rem soluta tempore velit vero vitae, voluptas. Assumenda atque dolorum eveniet ex facilis fugiat, libero nihil perferendis, recusandae sequi similique, sit vel voluptate. Culpa dolor, ea eaque expedita explicabo fugit iusto quod quos rerum? Asperiores dicta est, eum magni provident quaerat quam veniam! Accusamus adipisci alias blanditiis consectetur deserunt, dolore dolorum eaque earum eius enim eum exercitationem fugiat, fugit illo itaque labore magni natus neque nisi non numquam possimus praesentium quae quaerat qui quisquam quos rem repellendus saepe temporibus ut velit voluptate voluptatum. Ad assumenda beatae cum cumque dignissimos ea et facilis fugiat fugit hic illum impedit, laborum molestiae mollitia nam non odio officiis quia quis quisquam reprehenderit sit tenetur vitae voluptate voluptatum. Accusamus, aliquid aperiam commodi cumque debitis deleniti deserunt distinctio dolores est et fugit laboriosam necessitatibus officia quis repellat repellendus velit? Amet beatae, debitis dolore dolores obcaecati quia recusandae sint. Atque consequuntur enim, exercitationem fugiat incidunt nisi repellat repudiandae vero? Adipisci aliquam animi architecto, atque consequatur doloremque doloribus eaque fugit harum iste itaque, magnam nihil nisi odio officiis praesentium quia quidem quos rem repudiandae sed similique sit unde vero voluptate voluptatibus voluptatum! Commodi consequatur hic incidunt minus neque non provident, quas quia quod? A accusamus aliquid aspernatur assumenda debitis, distinctio dolore ex, illum in laborum modi mollitia nostrum odio omnis perspiciatis placeat qui, quod sunt vel voluptatem! Accusantium ad adipisci alias amet assumenda aut consequatur consequuntur corporis cum cupiditate distinctio dolores, ducimus fuga fugit inventore iure maxime modi molestiae nisi, obcaecati pariatur quam quia quis ratione reiciendis, reprehenderit sapiente similique sit tempora tenetur vel vitae voluptates voluptatibus! Architecto at aut consectetur culpa debitis dignissimos dolor ducimus earum enim est, et harum impedit magnam, magni maiores necessitatibus nulla odit omnis, quasi rerum sequi sunt tempore veniam. Asperiores aut dolorum ea eius esse, iste ullam? At blanditiis, eum laboriosam maxime obcaecati possimus ratione! Aliquam delectus dolorem id natus quo. Accusantium adipisci asperiores beatae consequatur culpa cum deserunt eaque ex expedita facilis harum incidunt laudantium natus nisi non provident quas ratione reiciendis soluta, sunt tenetur ut vero vitae! Aperiam assumenda blanditiis consectetur, debitis dolor doloremque eos explicabo incidunt itaque labore libero molestiae nam natus nihil, nobis placeat quidem sed suscipit, totam ullam? Aliquid aut expedita facilis illo, in labore modi quas sint. A aut cupiditate eaque et in laudantium maxime necessitatibus, officiis perspiciatis provident? Adipisci alias blanditiis cumque dolor fugit, obcaecati sint tempora voluptatum? Alias corporis dignissimos doloribus earum eveniet facilis fugit laborum minus nisi, nostrum, omnis perspiciatis quasi quia quidem repellat similique ullam.
+            </p>
+        </div>
+
     </div>
-
-
-    <div class="grid-item item10">
-        <img src="./media/pasted%20image%200.png" alt="">
+    <div class="footer container">
+        <p class="text-white">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, veritatis.
+        </p>
     </div>
-
-<!--    <div class="grid-item item11">-->
-
-<!--    </div>-->
-
-<!--    -->
-<!--    <div class="grid-item item12">-->
-
-<!--    </div>-->
-
-
-
 
 
 </div>
-
-
-<!--HOME END-->
-
 
 <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
