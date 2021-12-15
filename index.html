@@ -7,161 +7,100 @@
     <title>Title</title>
     <link rel="stylesheet" href="./css/main.css">
 </head>
-<body>
+<body class="">
 
 <div class="grid-container">
 
     <!--    HEADER-->
-    <div class="header">
+        <div class="header ">
+        <div class="container">
+            <nav class="navbar justify-content-between">
+                <a class="navbar-brand  ">Dashboard Template</a>
+                <form class="form-inline">
+                    <div>
+                        <a id="themeChanger" class="dark-theme text-decoration-none" href="#">
+                            <i class="bi bi-brightness-high fs-5 mx-3 p-2 rounded-3 "></i>
+                        </a>
 
-        <nav class="navbar navbar-expand-lg ">
-            <div class="container text-white">
-                <div id="dash-navbar" class="collapse navbar-collapse">
-                </div>
+                        <a class="text-decoration-none" href="#">
+                            <i class="bi bi-bell  fs-5 mx-3 p-2 rounded-3"></i>
+                        </a>
 
-                <button class="navbar-toggler"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#dash-navbar"
-                        aria-controls="dash-navbar"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                        <a class="text-decoration-none" href="#">
+                            <i class="bi bi-fullscreen fs-5 mx-3 p-2 rounded-3"></i>
+                        </a>
 
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Link</a>
-                    </li>
-                </ul>
-
-                <form class="d-flex ">
-                    <input class="form-control me-2" placeholder="search" aria-label="Search" type="search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                        <a class="text-decoration-none" href="#">
+                            <i class="bi bi-chat-right fs-5 mx-3 p-2 rounded-3"></i>
+                        </a>
+                    </div>
                 </form>
-            </div>
-
-        </nav>
-        <!--CHAT-->
-
-        <!--        <button class="btn btn-light position-absolute top-0 end-0"-->
-        <!--                type="button"-->
-        <!--                data-bs-toggle="offcanvas"-->
-        <!--                data-bs-target="#offcanvasRight"-->
-        <!--                aria-controls="offcanvasRight"-->
-        <!--        >Chat-->
-        <!--        </button>-->
-
-        <!--        <div class="offcanvas offcanvas-end"-->
-        <!--             tabindex="-1"-->
-        <!--             id="offcanvasRight"-->
-        <!--             aria-labelledby="offcanvasRightlabel">-->
-
-        <!--            <div class="offcanvas-header">-->
-        <!--                <h5 id="offcanvasRightlabel">Chat</h5>-->
-        <!--                <button type="button" class="btn-close text-reset" data-bs-dismiss=" offcanvas"-->
-        <!--                        aria-label="close"></button>-->
-        <!--            </div>-->
-
-        <!--            <div class="offcanvas-body">-->
-
-        <!--            </div>-->
-        <!--        </div>-->
-
-        <!--CHAT END-->
+            </nav>
+        </div>
     </div>
     <!--    HEADER END-->
 
-    <div class="menu">
+            <!--SIDEBAR-->
+        <div class="sidebar">
 
-        <!--MENU-->
-
-        <div class="menu">
-
-            <div class="d-flex flex-column p-lg-5 text-white " style="width: 280px" ;>
-                <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-                    <span class="fs-4">Menu</span>
+            <div class="d-flex flex-column p-lg-5" style="width: 280px">
+                <a href="/"
+                   class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none fs-5">
+                    <i class="bi bi-list mx-3 fs-5 p-2"></i> Menu
                 </a>
                 <hr>
 
                 <ul class="nav nav-pills flex-column mb-auto">
                     <li class="nav-item">
-                        <a href="" class="nav-link active" aria-current="page">Home</a>
+                        <a style="background-color: #6464a8" href="" class="nav-link active" aria-current="page">
+                            <i class="bi bi-house-door fs-6 p-2"></i>
+                            Home</a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="#" class="nav-link text-white" aria-current="page">Widgets</a>
+                        <a href="#" class="nav-link" aria-current="page">
+                            <i class="bi bi-columns-gap fs-6 p-2"></i>
+                            Widgets</a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="#" class="nav-link text-white" aria-current="page">Forms</a>
+                        <a href="#" class="nav-link" aria-current="page">
+                            <i class="bi bi-folder fs-6 p-2"></i>
+                            Folder</a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="#" class="nav-link text-white" aria-current="page">Graphics</a>
+                        <a href="#" class="nav-link fs-6" aria-current="page">
+                            <i class="bi bi-folder fs-6 p-2"></i>
+                            Graphics</a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="#" class="nav-link text-white" aria-current="page">Cards</a>
+                        <a href="#" class="nav-link fs-6" aria-current="page">
+                            <i class="bi bi-card-text fs-6 p-2"></i>
+                            Cards</a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="#" class="nav-link text-white" aria-current="page">Graphics</a>
+                        <a href="#" class="nav-link" aria-current="page">
+                            <i class="bi bi-card-text fs-6 p-2"></i>
+                            Graphics</a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="#" class="nav-link text-white" aria-current="page">Cards</a>
+                        <a href="#" class="nav-link" aria-current="page">
+                            <i class="bi bi-archive fs-6 p-2"></i>
+                            Cards</a>
                     </li>
                 </ul>
-                <hr>
-
-
-                <div class="dropdown ">
-                    <a href="#"
-                       class="d-flex align-items-center text-white text-decoration-none dropdown-toggle show"
-                       id="DashMenuDropdown"
-                       data-bs-toggle="dropdown"
-                       aria-expanded="true">Profile
-
-                    </a>
-
-                    <ul class="dropdown-menu dropdown-menu-dark text-small shadow show"
-                        aria-labelledby="DashMenuDropdown"
-                        style="position: absolute"
-                        data-popper-placement="top-start">
-
-                        <li>
-                            <a href="#" class="dropdown-item">New Projects</a>
-                        </li>
-
-                        <li>
-                            <a href="#" class="dropdown-item">Settings</a>
-                        </li>
-
-                        <li>
-                            <a href="#" class="dropdown-item">Profile</a>
-                        </li>
-
-                        <hr>
-
-                        <li>
-                            <a href="#" class="dropdown-item">Signout</a>
-                        </li>
-                    </ul>
-                </div>
             </div>
         </div>
-        <!--MENU END-->
+    <!--SIDEBAR END-->
 
-    </div>
+    <!--    HOME-->
+    <div class="home-dash">
 
-    <div class="home-dash text-white">
-
-        <div class="home item1 rounded-3">
+        <div class="home item1 ">
             <div class="row">
                 <div class="col-6 text-start">
                     <h5>Total Orders</h5>
@@ -169,7 +108,7 @@
                 </div>
 
                 <div class="col-6">
-                    <h1 style="color: #0a58ca" class="fs-1">1896</h1>
+                    <a class="fs-1">1896</a>
                 </div>
 
                 <div class="pl-3 pr-3">
@@ -184,7 +123,7 @@
             </div>
         </div>
 
-        <div class="home item2 rounded-3">
+        <div class="home item2 ">
             <div class="row">
 
                 <div class="col-6 text-start">
@@ -207,7 +146,7 @@
             </div>
         </div>
 
-        <div class="home item3 rounded-3">
+        <div class="home item3 ">
             <div class="row">
                 <div class="col-6 text-start">
 
@@ -230,7 +169,7 @@
             </div>
         </div>
 
-        <div class="home item4 rounded-3">
+        <div class="home item4 ">
             <div class="row">
                 <div class="col-6 text-start">
 
@@ -253,58 +192,64 @@
             </div>
         </div>
 
-        <div class="home item5 rounded-3 ">
+        <div class="home item5 ">
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto dolore fugiat rerum voluptate
-                voluptatibus! Aperiam aspernatur dolorum eius, fugiat incidunt quae veritatis. Ab amet consequatur
+                voluptatibus! Aperiam aspernatur dolorum eius,
+                <br>
+                <br>
+                fugiat incidunt quae veritatis. Ab amet consequatur
                 consequuntur cumque dignissimos error eum ex impedit laborum, maiores minus nulla officiis perspiciatis
-                placeat quasi repudiandae saepe sapiente sed soluta vero. Beatae cum dicta eligendi excepturi
-                exercitationem obcaecati unde velit voluptates. A accusamus architecto consequatur corporis, cupiditate
-                dolor dolorem doloremque eaque eligendi et harum hic laboriosam nisi nulla odio praesentium quas quasi
-                qui quis quod quos ratione rerum ullam veritatis vero. Asperiores dolore dolorem incidunt ipsum itaque
-                libero natus nostrum, numquam perferendis quibusdam sed voluptas.
+                placeat quasi repudiandae saepe sapiente sed soluta vero.
+                <br>
+                <br>
+                Beatae cum dicta eligendi excepturi
+                exercitationem obcaecati unde velit voluptates.
             </p>
         </div>
 
-        <div class="home item6 rounded-3">
+        <div class="home item6 ">
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et minus nemo nesciunt quos! Accusantium
-                blanditiis corporis earum error expedita facilis ipsa laborum minima necessitatibus nihil non, officiis
-                quae quibusdam, quisquam quo sed ut vitae voluptate. Ab accusamus adipisci amet aut commodi cupiditate
-                deleniti dolor ea error excepturi, explicabo facere fugiat fugit, impedit ipsam iusto maiores minus nam
-                natus nemo nisi nobis nulla numquam obcaecati officia perspiciatis porro quasi ratione repudiandae
-                similique temporibus velit, voluptatibus voluptatum! Adipisci, aliquam amet at doloribus dolorum est
-                explicabo incidunt labore laudantium, magni nesciunt odio, omnis porro quis quod quos recusandae sunt
-                tempore ullam ut? Atque.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto dolore fugiat rerum voluptate
+                voluptatibus! Aperiam aspernatur dolorum eius,
+                <br>
+                <br>
+                Beatae cum dicta eligendi excepturi
+                exercitationem obcaecati unde velit voluptates.
+                <br>
+                fugiat incidunt quae veritatis. Ab amet consequatur
+                consequuntur cumque dignissimos error eum ex impedit laborum, maiores minus nulla officiis perspiciatis
+                placeat quasi repudiandae saepe sapiente sed soluta vero.
             </p>
         </div>
 
-        <div class="home item7 rounded-3">
+        <div class="home item7 ">
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus atque beatae consequuntur culpa
                 debitis dolor eveniet itaque iusto modi molestiae nesciunt nostrum porro quae quasi, qui quia quibusdam
-                quos, reiciendis rem sapiente similique soluta tempora temporibus totam unde veniam voluptates. Ad
+                quos, reiciendis rem sapiente similique soluta tempora temporibus totam unde veniam voluptates.
+                <br>
+                <br>
+                Ad
                 aspernatur atque dolore, excepturi explicabo hic impedit laborum minima, necessitatibus odio perferendis
                 quo similique vel. Animi asperiores ea, exercitationem fugiat id illum magni quam quas qui quidem
                 repellat rerum tempore voluptas. Commodi consectetur consequuntur debitis dicta distinctio ducimus
                 facilis fuga fugit hic id illum ipsa iste, laboriosam laudantium magnam molestias natus nobis obcaecati
-                pariatur perspiciatis quibusdam quisquam quos recusandae rem, sit suscipit tenetur totam veniam vitae
-                voluptates. Animi, aut culpa dolor labore laboriosam necessitatibus nesciunt officiis optio, placeat
-                quibusdam, quos recusandae. Commodi dicta ducimus inventore laborum minus molestiae quod tempora unde
-                ut! Adipisci aperiam eaque eligendi facilis molestiae saepe sed soluta. Ab dicta esse facilis,
-                laboriosam laborum omnis. A ad aliquam asperiores autem esse eum, expedita, harum inventore labore neque
-                nostrum odit recusandae reiciendis repellendus reprehenderit soluta ut, velit veniam veritatis
-                voluptatem. Aliquam autem blanditiis commodi corporis doloribus ducimus expedita explicabo illum in
-                laborum nihil nisi omnis quod tempora ut vel, voluptate. Commodi doloribus fugiat ipsa quod sint sunt?
+                <br>
+                <br>
+                quibusdam, quos recusandae. Animi, aut culpa dolor labore laboriosam necessitatibus nesciunt officiis
+                optio, placeat
+                quibusdam, quos recusandae quibusdam, quos recusandae.
+
             </p>
         </div>
 
-        <div class="home item8 rounded-3">
-            <table class="table table-sm table-striped table-dark">
+        <div class="home  item8 ">
+            <table class="table">
                 <thead>
                 <tr>
                     <th scope="col">.</th>
-                    <th scope="">First Name</th>
+                    <th scope="col">First Name</th>
                     <th scope="col">Last Name</th>
                     <th scope="col">Profile Progress</th>
                     <th scope="col">Status</th>
@@ -317,7 +262,8 @@
                     <td>Jacob</td>
                     <td>
                         <div class="progress">
-                            <div class="progress-bar " style="width: 30%" role="progressbar" aria-valuenow="30"
+                            <div class="progress-bar bg-danger " style="width: 30%" role="progressbar"
+                                 aria-valuenow="30"
                                  aria-valuemin="0"
                                  aria-valuemax="100">
                             </div>
@@ -332,7 +278,7 @@
                     <td>Otto</td>
                     <td>
                         <div class="progress">
-                            <div class="progress-bar " style="width: 50%" role="progressbar" aria-valuenow="50"
+                            <div class="progress-bar bg-danger" style="width: 50%" role="progressbar" aria-valuenow="50"
                                  aria-valuemin="0"
                                  aria-valuemax="100">
                             </div>
@@ -349,7 +295,7 @@
                     <td>Roy</td>
                     <td>
                         <div class="progress">
-                            <div class="progress-bar " style="width: 85%" role="progressbar" aria-valuenow="85"
+                            <div class="progress-bar bg-danger" style="width: 85%" role="progressbar" aria-valuenow="85"
                                  aria-valuemin="0"
                                  aria-valuemax="100">
                             </div>
@@ -366,7 +312,7 @@
                     <td>Wayas</td>
                     <td>
                         <div class="progress">
-                            <div class="progress-bar " style="width: 15%" role="progressbar" aria-valuenow="15"
+                            <div class="progress-bar bg-danger" style="width: 15%" role="progressbar" aria-valuenow="15"
                                  aria-valuemin="0"
                                  aria-valuemax="100">
                             </div>
@@ -382,7 +328,8 @@
                     <td>Gehry</td>
                     <td>
                         <div class="progress">
-                            <div class="progress-bar " style="width: 100%" role="progressbar" aria-valuenow="100"
+                            <div class="progress-bar bg-danger" style="width: 100%" role="progressbar"
+                                 aria-valuenow="100"
                                  aria-valuemin="0"
                                  aria-valuemax="100">
                             </div>
@@ -392,26 +339,217 @@
                     <td>Single</td>
                 </tr>
 
+                <tr>
+                    <th scope="row">6</th>
+                    <td>Jack</td>
+                    <td>Gehry</td>
+                    <td>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" style="width: 45%" role="progressbar" aria-valuenow="45"
+                                 aria-valuemin="0"
+                                 aria-valuemax="100">
+                            </div>
+                        </div>
+                    </td>
+
+                    <td>Single</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">7</th>
+                    <td>Jack</td>
+                    <td>Gehry</td>
+                    <td>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" style="width: 25%" role="progressbar" aria-valuenow="25"
+                                 aria-valuemin="0"
+                                 aria-valuemax="100">
+                            </div>
+                        </div>
+                    </td>
+
+                    <td>In a relationship</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">8</th>
+                    <td>Jack</td>
+                    <td>Gehry</td>
+                    <td>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" style="width: 80%" role="progressbar" aria-valuenow="80"
+                                 aria-valuemin="0"
+                                 aria-valuemax="100">
+                            </div>
+                        </div>
+                    </td>
+
+                    <td>Complicated</td>
+                </tr>
+
                 </tbody>
             </table>
         </div>
 
-        <div class="home item9 rounded-3">
+        <div class="home item9 ">
+
+            <div class="card-body text-start">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dolorum fuga incidunt
+                    ipsam
+                    officiis praesentium rerum. A, architecto beatae deserunt ducimus, eos exercitationem id modi
+                    optio
+                    perspiciatis, quam quia saepe.</p>
+
+                <button class="btn btn-primary text-white">Join Us</button>
+            </div>
+
+        </div>
+
+        <div class="home item10 ">
+            <div class="card-body text-start">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dolorum fuga incidunt
+                    ipsam
+                    officiis praesentium rerum. A, architecto beatae deserunt ducimus, eos exercitationem id modi
+                    optio
+                    perspiciatis, quam quia saepe.</p>
+
+                <button class="btn btn-primary text-white">Join Us</button>
+            </div>
+        </div>
+
+        <div class="home item11 ">
+            <div class="card-body text-start">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem deserunt, est facere harum ipsa nam
+                    neque odit omnis reprehenderit ut. Asperiores cupiditate error ipsam magni nihil soluta voluptates!
+                    Provident, reiciendis.
+                </p>
+
+                <button class="btn btn-primary text-white">Join Us</button>
+            </div>
+        </div>
+
+        <div class="home item12">
+
+            <div class="row">
+                <div class="col-1">
+
+                    <img style="width: 50px; height: 50px" class="rounded-circle ml-3"
+                         src="./media/profile-1.png" alt="">
+                </div>
+
+                <div class="col-9">
+                    <a class="text-decoration-none text-start" href="#">Noah Johnson</a>
+                    <div class="fw-light small">Designer</div>
+                </div>
+
+                <div class="col-2">
+                    <button class="btn btn-danger btn-sm d-block text-white">Follow</button>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row">
+                <div class="col-1">
+
+                    <img style="width: 50px; height: 50px" class="rounded-circle ml-3"
+                         src="./media/profile-2.jpg" alt="">
+                </div>
+
+                <div class="col-9">
+                    <a class="text-decoration-none text-start" href="#">Jennifer Miller</a>
+                    <div class="fw-light small">Designer</div>
+                </div>
+
+                <div class="col-2">
+                    <button class="btn btn-danger btn-sm d-block text-white">Follow</button>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row">
+                <div class="col-1">
+
+                    <img style="width: 50px; height: 50px" class="rounded-circle ml-3"
+                         src="./media/profile-3.jpg" alt="">
+                </div>
+
+                <div class="col-9">
+                    <a class="text-decoration-none text-start" href="#">Noah Johnson</a>
+                    <div class="fw-light small">Designer</div>
+                </div>
+
+                <div class="col-2">
+                    <button class="btn btn-danger btn-sm d-block text-white">Follow</button>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row">
+                <div class="col-1">
+
+                    <img style="width: 50px; height: 50px" class="rounded-circle ml-3"
+                         src="./media/profile-1.png" alt="">
+                </div>
+
+                <div class="col-9">
+                    <a class="text-decoration-none text-start" href="#">Noah Johnson</a>
+                    <div class="fw-light small">Designer</div>
+                </div>
+
+                <div class="col-2">
+                    <button class="btn btn-danger btn-sm d-block text-white">Follow</button>
+                </div>
+            </div>
+
+            <hr>
+
+
+        </div>
+
+        <div class="home item13 ">
             <p>
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium architecto aspernatur at corporis cum distinctio fuga illo impedit laborum mollitia neque provident quis quod, saepe vero? Dolores laboriosam nam sit? Et id labore voluptatum. Accusamus aliquam animi aperiam architecto asperiores assumenda atque, commodi consequuntur cumque deserunt ea earum, eius exercitationem facilis fuga id inventore ipsam iusto labore molestiae nesciunt nihil nostrum optio placeat quaerat qui quia quisquam rem soluta tempore velit vero vitae, voluptas. Assumenda atque dolorum eveniet ex facilis fugiat, libero nihil perferendis, recusandae sequi similique, sit vel voluptate. Culpa dolor, ea eaque expedita explicabo fugit iusto quod quos rerum? Asperiores dicta est, eum magni provident quaerat quam veniam! Accusamus adipisci alias blanditiis consectetur deserunt, dolore dolorum eaque earum eius enim eum exercitationem fugiat, fugit illo itaque labore magni natus neque nisi non numquam possimus praesentium quae quaerat qui quisquam quos rem repellendus saepe temporibus ut velit voluptate voluptatum. Ad assumenda beatae cum cumque dignissimos ea et facilis fugiat fugit hic illum impedit, laborum molestiae mollitia nam non odio officiis quia quis quisquam reprehenderit sit tenetur vitae voluptate voluptatum. Accusamus, aliquid aperiam commodi cumque debitis deleniti deserunt distinctio dolores est et fugit laboriosam necessitatibus officia quis repellat repellendus velit? Amet beatae, debitis dolore dolores obcaecati quia recusandae sint. Atque consequuntur enim, exercitationem fugiat incidunt nisi repellat repudiandae vero? Adipisci aliquam animi architecto, atque consequatur doloremque doloribus eaque fugit harum iste itaque, magnam nihil nisi odio officiis praesentium quia quidem quos rem repudiandae sed similique sit unde vero voluptate voluptatibus voluptatum! Commodi consequatur hic incidunt minus neque non provident, quas quia quod? A accusamus aliquid aspernatur assumenda debitis, distinctio dolore ex, illum in laborum modi mollitia nostrum odio omnis perspiciatis placeat qui, quod sunt vel voluptatem! Accusantium ad adipisci alias amet assumenda aut consequatur consequuntur corporis cum cupiditate distinctio dolores, ducimus fuga fugit inventore iure maxime modi molestiae nisi, obcaecati pariatur quam quia quis ratione reiciendis, reprehenderit sapiente similique sit tempora tenetur vel vitae voluptates voluptatibus! Architecto at aut consectetur culpa debitis dignissimos dolor ducimus earum enim est, et harum impedit magnam, magni maiores necessitatibus nulla odit omnis, quasi rerum sequi sunt tempore veniam. Asperiores aut dolorum ea eius esse, iste ullam? At blanditiis, eum laboriosam maxime obcaecati possimus ratione! Aliquam delectus dolorem id natus quo. Accusantium adipisci asperiores beatae consequatur culpa cum deserunt eaque ex expedita facilis harum incidunt laudantium natus nisi non provident quas ratione reiciendis soluta, sunt tenetur ut vero vitae! Aperiam assumenda blanditiis consectetur, debitis dolor doloremque eos explicabo incidunt itaque labore libero molestiae nam natus nihil, nobis placeat quidem sed suscipit, totam ullam? Aliquid aut expedita facilis illo, in labore modi quas sint. A aut cupiditate eaque et in laudantium maxime necessitatibus, officiis perspiciatis provident? Adipisci alias blanditiis cumque dolor fugit, obcaecati sint tempora voluptatum? Alias corporis dignissimos doloribus earum eveniet facilis fugit laborum minus nisi, nostrum, omnis perspiciatis quasi quia quidem repellat similique ullam.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto dolore fugiat rerum voluptate
+                voluptamtibus! Aperiam aspedrnatur dolorum eius,
+                <br>
+                <br>
+                Beatae cum dicta eligendi excepturi
+                exercitationem obcaecati unde velit voluptates.
+                <br>
+                <br>
+                fugiat incidunt quae veritatis. Ab amet consequatur
+                consequuntur cumque dignissimos error eum ex impedit laborum, maiores minus nulla officiis perspiciatis
+                placeat quasi repudiandae saepe sapiente sed soluta vero.
+                <br>
+                <br>
+                fugiat incidunt quae veritatis. Ab amet consequatur
+                consequuntur cumque dignissimos error eum ex impedit laborum, maiores minus nulla officiis perspiciatis
+                placeat quasi repudiandae saepe sapiente sed soluta vero.
             </p>
         </div>
 
     </div>
-    <div class="footer container">
-        <p class="text-white">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, veritatis.
-        </p>
-    </div>
+    <!--    HOME END-->
 
+    <!--    FOOTER-->
+    <footer class="footer">
+
+    <div class="container">
+        <span style="float: left" >Copyright 2021 Dashboard</span>
+        <span style="float: right" >Designed by Zeynep Unal</span>
+    </div>
+    </footer>
+
+    <!--    FOOTER END-->
 
 </div>
 
 <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+<script src="./js/app.js"></script>
+
 </body>
 </html>
