@@ -1,7 +1,7 @@
 $purple: #22223d;
 $light-purple: #30304d;
 $light-purple-500: #6464a8;
-$text-white: #dedefd;
+$text-white: #eeeefa;
 $white: #ffffff;
 $gray: #e7e5e5;
 $black: #151515;
@@ -20,29 +20,32 @@ $black: #151515;
   background-color: $purple;
 }
 
-a {
+.dark-a {
   text-decoration: none;
-  color: $text-white !important;
+  color: $white!important;
+  text-decoration-color: $white!important;
 }
 
 //HEADER
 .header {
   grid-area: header;
   background-color: $light-purple;
-  text-decoration-color: $text-white;
 }
-
 //HEADER END
 
 //SIDEBAR
 .sidebar {
   grid-area: sidebar;
   background-color: $light-purple;
-  text-decoration-color: $text-white;
 }
+
 //SIDEBAR END
 
 //HOME
+.table_text {
+  color: $white!important;
+}
+
 .home-dash {
   padding: 10px;
   grid-area: home;
@@ -74,12 +77,20 @@ a {
 
 //DARK THEME END
 
+a {
+  color: $white!important;
+}
 
-
-
-
+.dash-light-theme a {
+  color: $black!important;
+}
 
 //LIGHT THEME
+
+.light-a {
+  text-decoration: none;
+  color: $black!important;
+}
 
 .dash-light-theme .grid-container {
   background-color: $gray;
@@ -92,18 +103,14 @@ a {
 'footer footer footer footer footer footer';
 }
 
-.dash-light-theme a {
-  text-decoration: none;
-  color: $black;
-}
+
 //HEADER
 
 .dash-light-theme .header {
   grid-area: header;
   background-color: $white;
-  text-decoration: none;
-  color: $black;
 }
+
 
 //HEADER END
 
@@ -113,17 +120,35 @@ a {
   grid-area: sidebar;
   background-color: $white;
   border-radius: 15px;
-  text-decoration-color: $black;
 }
 
 .dash-light-theme .sidebar a {
   font-size: large;
   font-weight: normal;
 }
+
+.nav-tabs .nav-link.active {
+  color: $black!important;
+}
+.nav-tabs .nav-link {
+  color: $white!important;
+}
+.dash-light-theme .nav-tabs .nav-link {
+  color: $black!important;
+}
+
+.dash-light-theme .nav-item .nav-link.active {
+  color: $white!important;
+}
+
 //SIDEBAR END
 
 
 //HOME
+.dash-light-theme .table_text {
+  color: $black!important;
+}
+
 .dash-light-theme .home {
   background-color: $white;
   text-decoration-color: $black;
@@ -136,6 +161,7 @@ a {
 .dash-light-theme .home a {
   font-size: large;
 }
+
 //HOME END
 
 //FOOTER
@@ -145,13 +171,9 @@ a {
   padding-top: 8px;
   padding-bottom: 8px;
 }
-
 //FOOTER END
+
 //LIGHT THEME END
-
-
-
-
 
 
 //WIDGETS

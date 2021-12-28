@@ -6,95 +6,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Title</title>
     <link rel="stylesheet" href="./css/main.css">
+<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 <body class="">
 
 <div class="grid-container">
 
     <!--    HEADER-->
-        <div class="header ">
+    <div class="header ">
         <div class="container">
-            <nav class="navbar justify-content-between">
-                <a class="navbar-brand  ">Dashboard Template</a>
-                <form class="form-inline">
-                    <div>
-                        <a id="themeChanger" class="dark-theme text-decoration-none" href="#">
-                            <i class="bi bi-brightness-high fs-5 mx-3 p-2 rounded-3 "></i>
-                        </a>
+                        <nav class="navbar justify-content-between">
+                            <a class="navbar-brand">Dashboard Template</a>
+                            <form class="form-inline">
+                                    <a id="themeChanger" class="text-decoration-none" href="#">
+                                        <i class="bi bi-brightness-high fs-5 mx-3 p-2 rounded-3 "></i>
+                                    </a>
 
-                        <a class="text-decoration-none" href="#">
-                            <i class="bi bi-bell  fs-5 mx-3 p-2 rounded-3"></i>
-                        </a>
+                                    <a class="text-decoration-none" href="#">
+                                        <i class="bi bi-fullscreen fs-5 mx-3 p-2 rounded-3"></i>
+                                    </a>
 
-                        <a class="text-decoration-none" href="#">
-                            <i class="bi bi-fullscreen fs-5 mx-3 p-2 rounded-3"></i>
-                        </a>
+                                    <a class="text-decoration-none" href="#">
+                                        <i class="bi bi-bell  fs-5 mx-3 p-2 rounded-3"></i>
+                                    </a>
 
-                        <a class="text-decoration-none" href="#">
-                            <i class="bi bi-chat-right fs-5 mx-3 p-2 rounded-3"></i>
-                        </a>
-                    </div>
-                </form>
-            </nav>
+                                    <a class="text-decoration-none" href="#">
+                                        <i class="bi bi-chat-right fs-5 mx-3 p-2 rounded-3"></i>
+                                    </a>
+                                    <img id="profilePicture" class="rounded-3 pb-1 mx-3" style="width: 25px" src="./media/avatar2.png"
+                                         alt="">
+                            </form>
+                        </nav>
+
         </div>
     </div>
     <!--    HEADER END-->
 
-            <!--SIDEBAR-->
-        <div class="sidebar">
 
-            <div class="d-flex flex-column p-lg-5" style="width: 280px">
-                <a href="/"
-                   class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none fs-5">
-                    <i class="bi bi-list mx-3 fs-5 p-2"></i> Menu
-                </a>
-                <hr>
+    <!--SIDEBAR-->
+    <div class="sidebar">
 
-                <ul class="nav nav-pills flex-column mb-auto">
-                    <li class="nav-item">
-                        <a style="background-color: #6464a8" href="" class="nav-link active" aria-current="page">
-                            <i class="bi bi-house-door fs-6 p-2"></i>
-                            Home</a>
-                    </li>
+        <div class="d-flex flex-column p-lg-5" style="width: 280px">
+            <a href="/"
+               class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none fs-5">
+                <i class="bi bi-list mx-3 fs-5 p-2"></i> Menu
+            </a>
+            <hr>
 
-                    <li class="nav-item">
-                        <a href="#" class="nav-link" aria-current="page">
-                            <i class="bi bi-columns-gap fs-6 p-2"></i>
-                            Widgets</a>
-                    </li>
+            <ul class="nav nav-pills flex-column mb-auto">
+                <li class="nav-item">
+                    <a style="background-color: #6464a8" href="#" class="nav-link active" aria-current="page">
+                        <i class="bi bi-house-door fs-6 p-2"></i>
+                        Home</a>
+                </li>
 
-                    <li class="nav-item">
-                        <a href="#" class="nav-link" aria-current="page">
-                            <i class="bi bi-folder fs-6 p-2"></i>
-                            Folder</a>
-                    </li>
+                <li class="nav-item">
+                    <a href="profile.html" class="nav-link" aria-current="page">
+                        <i class="bi bi-columns-gap fs-6 p-2"></i>
+                        Profile</a>
+                </li>
 
-                    <li class="nav-item">
-                        <a href="#" class="nav-link fs-6" aria-current="page">
-                            <i class="bi bi-folder fs-6 p-2"></i>
-                            Graphics</a>
-                    </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" aria-current="page">
+                        <i class="bi bi-folder fs-6 p-2"></i>
+                        Folder</a>
+                </li>
 
-                    <li class="nav-item">
-                        <a href="#" class="nav-link fs-6" aria-current="page">
-                            <i class="bi bi-card-text fs-6 p-2"></i>
-                            Cards</a>
-                    </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link fs-6" aria-current="page">
+                        <i class="bi bi-folder fs-6 p-2"></i>
+                        Graphics</a>
+                </li>
 
-                    <li class="nav-item">
-                        <a href="#" class="nav-link" aria-current="page">
-                            <i class="bi bi-card-text fs-6 p-2"></i>
-                            Graphics</a>
-                    </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link fs-6" aria-current="page">
+                        <i class="bi bi-card-text fs-6 p-2"></i>
+                        Cards</a>
+                </li>
 
-                    <li class="nav-item">
-                        <a href="#" class="nav-link" aria-current="page">
-                            <i class="bi bi-archive fs-6 p-2"></i>
-                            Cards</a>
-                    </li>
-                </ul>
-            </div>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" aria-current="page">
+                        <i class="bi bi-card-text fs-6 p-2"></i>
+                        Graphics</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link" aria-current="page">
+                        <i class="bi bi-archive fs-6 p-2"></i>
+                        Cards</a>
+                </li>
+            </ul>
         </div>
+    </div>
     <!--SIDEBAR END-->
 
     <!--    HOME-->
@@ -108,7 +112,7 @@
                 </div>
 
                 <div class="col-6">
-                    <a class="fs-1">1896</a>
+                    <h1 style="color: #6464a8" class="fs-1">1896</h1>
                 </div>
 
                 <div class="pl-3 pr-3">
@@ -245,7 +249,7 @@
         </div>
 
         <div class="home  item8 ">
-            <table class="table">
+            <table class="table table_text">
                 <thead>
                 <tr>
                     <th scope="col">.</th>
@@ -439,7 +443,7 @@
                 </div>
 
                 <div class="col-9">
-                    <a class="text-decoration-none text-start" href="#">Noah Johnson</a>
+                    <a class="text-start" href="#">Noah Johnson</a>
                     <div class="fw-light small">Designer</div>
                 </div>
 
@@ -458,7 +462,7 @@
                 </div>
 
                 <div class="col-9">
-                    <a class="text-decoration-none text-start" href="#">Jennifer Miller</a>
+                    <a class="text-start" href="#">Jennifer Miller</a>
                     <div class="fw-light small">Designer</div>
                 </div>
 
@@ -477,7 +481,7 @@
                 </div>
 
                 <div class="col-9">
-                    <a class="text-decoration-none text-start" href="#">Noah Johnson</a>
+                    <a class="text-start" href="#">Noah Johnson</a>
                     <div class="fw-light small">Designer</div>
                 </div>
 
@@ -496,7 +500,7 @@
                 </div>
 
                 <div class="col-9">
-                    <a class="text-decoration-none text-start" href="#">Noah Johnson</a>
+                    <a class="text-start" href="#">Noah Johnson</a>
                     <div class="fw-light small">Designer</div>
                 </div>
 
@@ -537,19 +541,22 @@
     <!--    FOOTER-->
     <footer class="footer">
 
-    <div class="container">
-        <span style="float: left" >Copyright 2021 Dashboard</span>
-        <span style="float: right" >Designed by Zeynep Unal</span>
-    </div>
+        <div class="container">
+            <a style="float: left">Copyright 2021 Dashboard</a>
+            <a style="float: right">Designed by Zeynep Unal</a>
+        </div>
     </footer>
 
     <!--    FOOTER END-->
 
 </div>
 
-<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+<!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>-->
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>-->
+<!--<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 <script src="./js/app.js"></script>
-
 </body>
 </html>
