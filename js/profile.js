@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", loadScreen);
 saveChangesButton.addEventListener("click", pickProfilePicture);
 
 // FUNCTIONS
-function changeAbout () {
+function changeAbout(e) {
     const profileInputName = document.getElementById("nameProfile");
     const profileInputLastName = document.getElementById("lastNameProfile");
 
@@ -28,7 +28,6 @@ function changeAbout () {
 
     e.preventDefault();
     setLocalStorage();
-    setLocalPics();
 }
 
 
@@ -65,9 +64,22 @@ function loadScreen() {
     const profileMail = document.getElementById("profileMail");
 
     let name = localStorage.getItem("name");
+    if (name === null) {
+        name = "Name"
+    }
     let lastName = localStorage.getItem("last-name");
+    if (lastName === null) {
+        lastName = "Lastname"
+    }
     let mail = localStorage.getItem("mail");
+    if (mail === null) {
+        mail = "ex@domain.com"
+    }
+
     let about = localStorage.getItem("about");
+    if (about === null) {
+        about = "Hi there!"
+    }
 
     profileMail.textContent = mail;
     profileInfo.textContent = name + " " + lastName;
@@ -80,12 +92,11 @@ function loadScreen() {
     let profilePictureSmall = document.getElementById("profilePicture");
 
     let profilePicLoad = localStorage.getItem("profilePicture");
+    if (profilePicLoad !== null) {
+        profilePictureNow.src = "./media/" + profilePicLoad;
+        profilePictureSmall.src = "./media/" + profilePicLoad;
 
-    profilePictureNow.src = "./media/" + profilePicLoad;
-    profilePictureSmall.src = "./media/" + profilePicLoad;
-
-    let pickPicture = document.querySelector('input[value="' + profilePicLoad + '"]');
-    if (pickPicture) {
+        let pickPicture = document.querySelector('input[value="' + profilePicLoad + '"]');
         pickPicture.checked = true
     }
 
