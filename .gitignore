@@ -145,3 +145,8 @@ dmypy.json
 Notes.txt
 
 node_modules/
+
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
