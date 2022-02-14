@@ -9,3 +9,7 @@ An example of admin dashboard website. This is a training exercise.
 - Grid system is used.
 - Several type of widgets are created such as progress bar, profile card, tab panel, form...
 
+![Dashboard App](https://github.com/zeybusra/Dashboard/blob/main/Dashboard.png?raw=true)
+
+
+![Dashboard Profile Page](https://github.com/zeybusra/Dashboard/blob/main/Dashboard_profile.png?raw=true)
